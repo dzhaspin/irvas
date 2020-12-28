@@ -18047,7 +18047,7 @@ var images = function images() {
   var imgPopup = document.createElement('div'),
       workSection = document.querySelector('.works'),
       bigImage = document.createElement('img');
-  imgPopup.classList.add('popup');
+  imgPopup.classList.add('popup_calc');
   workSection.appendChild(imgPopup);
   imgPopup.style.justifyContent = 'center';
   imgPopup.style.alignItems = 'center';
@@ -18063,7 +18063,7 @@ var images = function images() {
       bigImage.setAttribute('src', path);
     }
 
-    if (target && target.matches('div.popup')) {
+    if (target && target.matches('div.popup_calc')) {
       imgPopup.style.display = 'none';
     }
   });
